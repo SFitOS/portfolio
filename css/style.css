@@ -10,11 +10,13 @@ body{
     justify-content: space-between;
     width: 950px;
     margin: 0 auto;
-    align-items: center;
+    align-items: center;    
 }
 .header-top{
     background-color: black;
     padding: 15px 0 25px 0;
+    background-image: url('../pic/lines.png');
+    
 }
 .header-bottom{
     background-color: #00b0e2;
