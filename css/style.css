@@ -1,6 +1,6 @@
+/* header */
+
 body{
-    /* display: flex; */
-    /* justify-content: center; */
     width: 100%;
     margin: 0;
 }
@@ -14,9 +14,8 @@ body{
 }
 .header-top{
     background-color: black;
-    padding: 15px 0 25px 0;
+    padding: 15px 0 26px 0;
     background-image: url('../pic/lines.png');
-    
 }
 .header-bottom{
     background-color: #00b0e2;
@@ -72,10 +71,11 @@ font-size: 44px;
     flex-direction: column;
     margin: 0 auto;
     width: 950px;
-    padding: 30px 0 0 0;
+    padding: 20px 0 0 0;
 }
 .main-title{
     font-size: 44px;
+    margin-bottom: 20px;
 }
 .block-content{
     display: flex;
@@ -96,12 +96,33 @@ font-size: 44px;
     width: 250px;
     align-content: center;
     padding: 30px;   
+    text-decoration: none;
 }
 #main img{
     padding: 4px;
     border: 1px solid #ebebeb;
     background-color: #f8f8f8;
+    margin: 0 0 5px 0;
+    
 }
 
+#main a h4{
+    font-size: 24px;
+    font-family: "Arial";
+    font-weight: bold;
+    color: #222222;
+    margin: 0 0 10px 0;
+}
 
+#main .dotted{
+    background: url('../pic/dotted.png') repeat-x;
+    height: 1px;
+}
 
+#main a p{
+    font-size: 12px;
+    font-family: "Arial";
+    color: #a2a2a2;
+    margin: 0;
+    
+}
