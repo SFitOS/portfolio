@@ -30,10 +30,18 @@ font-size: 44px;
 }
 
 .logo-name a{
-    color: #ffffff;
+    display: block;
+    position: relative;
+    background: url('../pic/DesignCompany.png');
+    width: 260px;
+    height: 42px;
+    background-repeat: no-repeat;
+    text-indent: -9000px;
 }
 .logo-slogan a{
-    color: #ffffff;
+    color: #949494;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
 }
 .naigation {
     width: 950px;
