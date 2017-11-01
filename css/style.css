@@ -169,6 +169,46 @@ font-size: 44px;
 #aside{
     background-color: #1e1e1e;
 }
+.main-article{
+    width: 950px;
+    margin: 0 auto;    
+}
+
 #aside h3{
     margin-top: 0;
+}
+#aside .latest-news{
+    display: flex;
+    justify-content: space-around;
+}
+
+.news {
+    width: 312px;
+	padding: 17px 21px 25px 20px;
+	box-sizing: border-box;
+}
+
+.news h3{
+    font: 24px/24px "Stymie XBd BT";
+	margin: 0;
+    color: #f4f4f4;
+    margin-bottom: 20px;
+}
+
+.news footer{
+    float: right;
+}
+
+.news p{
+    color: white;
+    margin: 0;
+}
+
+.news-frame{
+    margin-bottom: 20px;
+}
+.news .dotted{
+    background: url('../pic/greydotted.png') repeat-x;
+    height: 1px;
+    margin: 0 0 10px 0;
 }
