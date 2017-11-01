@@ -136,21 +136,39 @@ font-size: 44px;
 }
 
 .main-pages {
-    width: 314px;
-    margin: 0 auto;
-}
-
-#main .pagelist{
+    align-self: center;
     display: flex;
     justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    text-align: center;
+    list-style: none;
+    margin: 0 0 33px 0;
     padding: 0;
-    margin: 0 0 20px 0;
+}
+.main-pages button{
+    background: #00b0e2;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    outline: none;
+    font: 12px "Arial";
+}
+#main .pagelist{
+   margin: 0;
+   text-align: center;
 }
 
 #main .pagelist li{
-    display: block;
-    padding: 5px;
+    display: inline-block;
+    padding: 5px 10px;
+    color: #777;
+    font: 12px "Arial";
+}
+/* aside */
+
+
+#aside{
+    background-color: #1e1e1e;
+}
+#aside h3{
+    margin-top: 0;
 }
