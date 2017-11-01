@@ -90,7 +90,7 @@ font-size: 44px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    
+    margin: 0 0 20px 0;
 }
 #main .frame-content{
     width: 310px;
@@ -99,7 +99,7 @@ font-size: 44px;
     border-radius: 10px;
     border: 1px solid #dddddd;
 }
-#main a{
+#main .block-content a{
     display: inline-block;
     width: 250px;
     align-content: center;
@@ -125,6 +125,7 @@ font-size: 44px;
 #main .dotted{
     background: url('../pic/dotted.png') repeat-x;
     height: 1px;
+    margin: 0 0 10px 0;
 }
 
 #main a p{
@@ -132,5 +133,24 @@ font-size: 44px;
     font-family: "Arial";
     color: #a2a2a2;
     margin: 0;
-    
+}
+
+.main-pages {
+    width: 314px;
+    margin: 0 auto;
+}
+
+#main .pagelist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+#main .pagelist li{
+    display: block;
+    padding: 5px;
 }
