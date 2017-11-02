@@ -153,17 +153,21 @@ font-size: 44px;
     font: 12px "Arial";
 }
 #main .pagelist{
-   margin: 0;
-   text-align: center;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 #main .pagelist li{
     display: inline-block;
     padding: 5px 10px;
-    color: #777;
     font: 12px "Arial";
 }
-/* aside */
+#main .pagelist a{
+    color: #777;
+}
+
+    /* aside */
 
 
 #aside{
@@ -192,7 +196,7 @@ font-size: 44px;
     font: 24px/24px "Stymie XBd BT";
 	margin: 0;
     color: #f4f4f4;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .news footer{
@@ -202,13 +206,35 @@ font-size: 44px;
 .news p{
     color: white;
     margin: 0;
+    font-size: 12px;
+    font-family: "Arial", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    font-style: normal;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+	border-bottom: 1px dotted #535353;
+
+    
 }
 
-.news-frame{
-    margin-bottom: 20px;
+
+article a{
+    color: #00b0e2;
 }
-.news .dotted{
-    background: url('../pic/greydotted.png') repeat-x;
-    height: 1px;
-    margin: 0 0 10px 0;
+article span{
+    color: #00b0e2;    
+}
+
+/* footer */
+
+#footer{
+	background: #000000;
+	display: flex;
+	justify-content: center;
+}
+
+.footer-info{
+	font: 12px "Arial";
+	color: #666;
+	padding: 31px 0 36px 0;
 }
