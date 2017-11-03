@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "StymieXBd";
+    src: url(../fonts/StymieXBd.ttf);
+}
+
 /* header */
 
 body{
@@ -140,10 +145,15 @@ nav li:hover{
     width: 950px;
     padding: 20px 0 0 0;
 }
-.main-title{
+.title-text{
     font-size: 44px;
     margin-bottom: 20px;
+    font-family: "StymieXBd", Arial, Helvetica, sans-serif;
+    background: linear-gradient(#646464, #020202);
+    -webkit-background-clip: text;
+    color: transparent;
 }
+
 .block-content{
     display: flex;
     flex-wrap: wrap;
@@ -194,10 +204,9 @@ nav li:hover{
     margin: 0;
 }
 
-.main-pages {
+#main .main-pages {
     align-self: center;
     display: flex;
-    justify-content: center;
     list-style: none;
     margin: 0 0 33px 0;
     padding: 0;
@@ -224,25 +233,34 @@ nav li:hover{
 }
 #main .pagelist a{
     color: #868686;
+    
 }
 
-.pagelist li:hover {
+#main .pagelist li:hover {
 	background: #1e1e1e;
 	color: #fff;
+}
+#main .pagelist li:hover a{
+    color: #fff;
+    
 }
 .main-pages button:hover{
 	background: #1e1e1e;
 	color: #fff;
 }
-.pagelist li:active {
+#main .pagelist li:active {
 	background: #1e1e1e;
 	color: #fff;
 }
-.pagelist .active{
+#main .pagelist .active{
 	background: #1e1e1e;
 	color: #fff;
 	cursor: default;
 }
+#main .pagelist .active a{
+    color: #fff;
+}    
+    
     /* aside */
 
 
@@ -269,7 +287,7 @@ nav li:hover{
 }
 
 .news h3{
-    font: 24px/24px "Arial";
+    font: 24px/24px "StymieXBd", Arial, Helvetica, sans-serif;
 	margin: 0;
     color: #f4f4f4;
     margin-bottom: 10px;
@@ -280,13 +298,13 @@ nav li:hover{
 }
 
 .news p{
-    color: white;
+    color: #cccccc;
     margin: 0;
     font-size: 12px;
     font-family: "Arial", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.5;
     font-style: normal;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     padding-bottom: 8px;
 	border-bottom: 1px dotted #535353;
 }
@@ -295,8 +313,12 @@ nav li:hover{
 article a{
     color: #00b0e2;
 }
-article span{
+article .blue-words{
     color: #00b0e2;    
+}
+article .white-words{
+    color: #eeeeee;
+    font-weight: bold;
 }
 
 /* footer */
