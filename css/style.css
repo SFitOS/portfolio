@@ -17,9 +17,6 @@ body{
     padding: 15px 0 26px 0;
     background-image: url('../pic/lines.png');
 }
-.header-bottom{
-    background-color: #00b0e2;
-}
 
 a {
     text-decoration: none;
@@ -43,6 +40,40 @@ font-size: 44px;
     font-family: Arial, sans-serif;
     font-size: 14px;
 }
+#header .search{
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: inset 3px 3px 0 0 #eee;
+}
+
+.search-block .search-field{
+	width: 160px;
+	height: 27px;
+	float: left;
+	border: none;
+	background: none;
+	box-sizing: border-box;
+	padding-left: 10px;
+	outline: none;
+}
+.search-block .button{
+    float: right;
+	padding: 0 10px;
+	height: 27px;
+	border: none;
+	border-radius: 5px;
+	font: 10px "Arial";
+	color: #ffffff;
+	font-weight: bold;
+	background: linear-gradient(#00c2e9,#0098d7);
+	outline: none;
+}
+.header-bottom{
+	/* box-shadow:  */
+	background: linear-gradient(#009cc8,#00b0e2);
+}
+
 .naigation {
     width: 950px;
     margin: 0 auto;
@@ -51,16 +82,44 @@ font-size: 44px;
     display: flex;
     align-self: center;
     width:100%;
-    justify-content: space-between;
-    padding: 0;     
+    padding: 0;  
+    margin: 0;   
 }
 
 
 #header .navigation-bar li{
     text-decoration: none;
     display: block;
-    width: 113px;
+    font: bold 14px/15px "Arial", Helvetica, sans-serif;
+    position: relative;
+    box-sizing: border-box;
+    padding: 16px;
+    content: visible;
 }
+
+nav li:hover{
+	color: #ffffff;
+    background: linear-gradient(#1a1a1a, #333333); 
+    padding-top: 18px;
+    z-index: 10;    
+}
+.nav-active{
+	display: block;
+	background: #333333; 
+}
+.nav-active:after{
+    position: absolute;
+    border-radius: 0 0 5px 5px;
+    z-index: 10000000000;
+    content: '';
+    display: block;
+    height: 10px;
+    width: 100%;
+    bottom: -10px;
+    left: 0;
+    background: #333333;
+}
+
 #header .navigation-bar a{
     display: block;
     text-align: center;
@@ -164,9 +223,26 @@ font-size: 44px;
     font: 12px "Arial";
 }
 #main .pagelist a{
-    color: #777;
+    color: #868686;
 }
 
+.pagelist li:hover {
+	background: #1e1e1e;
+	color: #fff;
+}
+.main-pages button:hover{
+	background: #1e1e1e;
+	color: #fff;
+}
+.pagelist li:active {
+	background: #1e1e1e;
+	color: #fff;
+}
+.pagelist .active{
+	background: #1e1e1e;
+	color: #fff;
+	cursor: default;
+}
     /* aside */
 
 
@@ -193,7 +269,7 @@ font-size: 44px;
 }
 
 .news h3{
-    font: 24px/24px "Stymie XBd BT";
+    font: 24px/24px "Arial";
 	margin: 0;
     color: #f4f4f4;
     margin-bottom: 10px;
@@ -213,8 +289,6 @@ font-size: 44px;
     margin-bottom: 10px;
     padding-bottom: 8px;
 	border-bottom: 1px dotted #535353;
-
-    
 }
 
 
